@@ -1,6 +1,21 @@
+import { Interface } from "readline";
 import { expect, it } from "vitest";
+import { number } from "zod";
 
-export const addTwoNumbers = (params) => {
+
+type twoNumbers = {
+  first: number,
+  second: number
+}
+
+interface TwoNumbers {
+  first: number,
+  second: number
+
+}
+
+
+export const addTwoNumbers = (params: TwoNumbers) => {
   return params.first + params.second;
 };
 
