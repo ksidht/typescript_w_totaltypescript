@@ -15,7 +15,7 @@ interface TwoNumbers {
 }
 
 
-export const addTwoNumbers = (params: TwoNumbers) => {
+export const addTwoNumbers = (params: twoNumbers) => {
   return params.first + params.second;
 };
 
